@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -133,7 +133,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
-<schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
+<schematic xreflabel="%F%N/%S" xrefpart="/%S.%C%R">
 <libraries>
 <library name="SparkFun-LED">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
@@ -1125,11 +1125,26 @@ grid 3.5 mm, diameter 10 mm</description>
 <plain>
 </plain>
 <instances>
-<instance part="LED1" gate="G$1" x="48.26" y="63.5" rot="R90"/>
-<instance part="S1" gate="G$1" x="33.02" y="53.34" rot="R180"/>
-<instance part="U$1" gate="G$1" x="50.8" y="40.64"/>
-<instance part="R1" gate="G$1" x="66.04" y="58.42" rot="R270"/>
-<instance part="C6" gate="G$1" x="50.8" y="53.34" rot="R90"/>
+<instance part="LED1" gate="G$1" x="48.26" y="63.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="52.832" y="67.056" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="52.832" y="69.215" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="S1" gate="G$1" x="33.02" y="53.34" smashed="yes" rot="R180">
+<attribute name="NAME" x="35.56" y="58.42" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="28.575" y="58.42" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="U$1" gate="G$1" x="50.8" y="40.64" smashed="yes">
+<attribute name="NAME" x="55.88" y="45.72" size="1.27" layer="95"/>
+<attribute name="VALUE" x="55.88" y="35.56" size="1.27" layer="96"/>
+</instance>
+<instance part="R1" gate="G$1" x="66.04" y="58.42" smashed="yes" rot="R270">
+<attribute name="NAME" x="67.5386" y="62.23" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="62.738" y="62.23" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="C6" gate="G$1" x="50.8" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="48.26" y="55.88" size="1.27" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="50.8" y="55.88" size="1.27" layer="96" font="vector" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
