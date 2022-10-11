@@ -12,5 +12,6 @@ https://sonesta-automaten.de/
   <img src="/RAW/schematic.png" alt="Schematic" />
 </p>
 
+
 ![Diagram of board](/RAW/poster.png?raw=true)  
 
